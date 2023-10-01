@@ -7,32 +7,42 @@
     </head>
     <body>
         <!-- Header -->
-        <header>
+        <header class="header">
             <div>
                 <!-- search bar -->
-                <div>
-                    <div>Icon</div>
-                    <div>Search bar</div>
+                <div class="search">
+                    <button>
+                        <img src="/assets/icons/magnify.svg" />
+                    </button>
+                    <input type="search" class="search" />
                 </div>
                 <!-- bell icon -->
-                <div>bell icon</div>
+                <div class="bell">
+                    <button>
+                        <img src="/assets//icons/bell-ring-outline.svg">
+                    </button>
+                </div>
                 <!-- Logo icon n Name -->
                 <div>
-                    <div>Avatar</div>
-                    <div>Some Name</div>
+                    <button>
+                        <img src="/assets/icons/face-man-shimmer-outline.svg">
+                    </button>
+                    <div class="user-name">Some Name</div>
                 </div>
             </div>
-            <div>
+            <div class="greeting-container">
                 <!-- Logo icon n Hi, Name (@name) -->
-                <div>
-                    <div>Avatar</div>
+                <div class="greeting">
+                    <div class="greeting-avatar">
+                        <img src="/assets/icons/face-man-shimmer-outline.svg">
+                    </div>
                     <div>
                         <p>Hi, there</p>
-                        <p>Some Name (@name)</p>
+                        <p>Some Name (@nameSome)</p>
                     </div>
                 </div>
                 <!-- Buttons -->
-                <div>
+                <div class="greeting-btn-container">
                     <!-- New button -->
                     <button>New</button>
                     <!-- Upload button -->
@@ -44,6 +54,7 @@
         </header>
 
         <!-- Sidebar -->
+        <!-- TODO change aside tag to nav and div's to list -->
         <aside>
             <!-- Dashboard -->
             <div>Icon</div>
