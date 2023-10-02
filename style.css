@@ -1,0 +1,73 @@
+/* Global Configurations */
+:root {
+    --main-grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+    --main-padding: 10%;
+    --main-bg-color: #f9fafb;
+    --default-font-size: 22px;
+}
+
+/* Global Resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Body and Typography */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+    font-family: odinFont;
+    src: url(./assets/fonts/Norse-Bold.otf);
+}
+
+@font-face {
+    font-family: mainFont;
+    src: url(./assets/fonts/OpenSans-Regular.ttf);
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    all: unset;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+    font-family: mainFont;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+/* Images and Media */
+img {
+    display: block;
+    max-width: 100%;
+    width: 20px;
+}
