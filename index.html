@@ -4,53 +4,48 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Admin Dashboard</title>
-        <link rel="stylesheet" href="/style.css" >
+        <link rel="stylesheet" href="/style.css" />
     </head>
     <body>
         <!-- Header -->
         <header class="header">
-            <div class="header-top">
-                <!-- search bar -->
-                <div class="search">
-                    <button>
-                        <img src="/assets/icons/magnify.svg" />
-                    </button>
-                    <input type="search" class="search" placeholder="search..."/>
+            <!-- search bar -->
+            <div class="search-container">
+                <button class="search-button">
+                    <img src="/assets/icons/magnify.svg" />
+                </button>
+                <input type="search" class="search" placeholder="search ..." />
+            </div>
+            <!-- bell icon -->
+            <!-- Logo icon n Name -->
+            <div class="user-container">
+                <button class="bell">
+                    <img src="/assets//icons/bell-ring-outline.svg" />
+                </button>
+                <button class="user-icon">
+                    <img src="/assets/icons/face-man-shimmer-outline.svg" />
+                </button>
+                <div class="user-name">Some Name</div>
+            </div>
+
+            <!-- Logo icon n Hi, Name (@name) -->
+            <div class="greeting-container">
+                <div class="greeting-avatar">
+                    <img src="/assets/icons/face-man-shimmer-outline.svg" />
                 </div>
-                <!-- bell icon -->
-                <div class="bell">
-                    <button>
-                        <img src="/assets//icons/bell-ring-outline.svg" />
-                    </button>
-                </div>
-                <!-- Logo icon n Name -->
                 <div>
-                    <button>
-                        <img src="/assets/icons/face-man-shimmer-outline.svg" />
-                    </button>
-                    <div class="user-name">Some Name</div>
+                    <p>Hi, there</p>
+                    <p>Some Name (@nameSome)</p>
                 </div>
             </div>
-            <div class="greeting-container">
-                <!-- Logo icon n Hi, Name (@name) -->
-                <div class="greeting">
-                    <div class="greeting-avatar">
-                        <img src="/assets/icons/face-man-shimmer-outline.svg" />
-                    </div>
-                    <div>
-                        <p>Hi, there</p>
-                        <p>Some Name (@nameSome)</p>
-                    </div>
-                </div>
-                <!-- Buttons -->
-                <div class="greeting-btn-container">
-                    <!-- New button -->
-                    <button>New</button>
-                    <!-- Upload button -->
-                    <button>Upload</button>
-                    <!-- Share button -->
-                    <button>Share</button>
-                </div>
+            <!-- Buttons -->
+            <div class="button-container">
+                <!-- New button -->
+                <button>New</button>
+                <!-- Upload button -->
+                <button>Upload</button>
+                <!-- Share button -->
+                <button>Share</button>
             </div>
         </header>
 
@@ -58,8 +53,11 @@
         <nav class="sidebar-container">
             <!-- Dashboard -->
             <div class="sidebar-header">
-                <img id="sidebar-header-img" src="/assets/icons/view-dashboard.svg" />
-                <h1>Dashboard</h1> 
+                <img
+                    id="sidebar-header-img"
+                    src="/assets/icons/view-dashboard.svg"
+                />
+                <h1>Dashboard</h1>
             </div>
             <div class="main-nav-container">
                 <ul>

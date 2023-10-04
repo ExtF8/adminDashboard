@@ -33,6 +33,11 @@ body {
     src: url(./assets/fonts/OpenSans-Regular.ttf);
 }
 
+@font-face {
+    font-family: secondaryFont;
+    src: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 input,
 button,
 textarea,
@@ -83,6 +88,7 @@ body {
     display: grid;
     grid-template: var(--main-grid-template);
     height: 100vh;
+    font-family: mainFont;
 }
 
 /* Sidebar container */
@@ -108,7 +114,7 @@ body {
 
 .sidebar-header h1 {
     font-size: 26px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: secondaryFont;
     font-weight: 600;
 }
 
@@ -126,19 +132,80 @@ ul li {
 .header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    position: relative;
 
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    row-gap: 15px;
+    grid-template-rows: repeat(2, 3fr);
+    grid-template-columns: 6fr 1fr 1fr 1fr;
 }
-.header-top {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
+
+.search-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+}
+
+.search-button img {
+    width: 30px;
+    margin: 4px;
+}
+
+.search {
+    background: #e2e7f1;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 20px;
+    height: 30px;
+    flex-grow: 1;
+    /* justify-self: start; */
+    align-self: center;
+}
+
+.user-container {
+    grid-column: 2 / 5;
+
+    /* border: 1px solid red;    */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+.bell img,
+.user-icon img {
+    width: 35px;
+    margin-inline: 10px;
+}
+
+.user-name {
+    display: flex;
+
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .greeting-container {
-    grid-column: 1 / 3;
+    grid-column: 1 / 2;
     grid-row: 2 / 3;
+}
+
+.button-container {
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button-container button {
+    text-align: center;
+    color: #f9fafb;
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: #3c3cfc;
 }
 
 /* Main Container */
