@@ -238,4 +238,35 @@ ul li {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     position: relative;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr 3fr;
+}
+
+.projects-container h1 {
+    grid-column: 1 / 3;
+}
+
+.card {
+    align-self: center;
+    justify-self: center;
+    width: 380px;
+    height: 180px;
+    margin: 8px;
+
+    border: 1px solid red;
+
+}
+
+.card-icons {
+    display: flex;
+    justify-content: flex-end;
+
+    border: 1px solid red;
 }
