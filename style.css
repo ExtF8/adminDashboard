@@ -96,6 +96,7 @@ body {
     grid-row: 1 / 3;
     grid-column: 1 / 2;
     padding: var(--main-padding);
+    color: #e2e7f1;
 
     display: grid;
     grid-template-columns: 1fr;
@@ -128,6 +129,11 @@ ul li {
     padding: 4px;
 }
 
+.main-nav-container, .settings-container {
+    font-size: var(--default-font-size);
+    font-weight: bold;
+}
+
 /* Header */
 .header {
     grid-column: 2 / 3;
@@ -137,6 +143,7 @@ ul li {
     row-gap: 15px;
     grid-template-rows: repeat(2, 3fr);
     grid-template-columns: 6fr 1fr 1fr 1fr;
+    padding-inline: 20px;
 }
 
 .search-container {
@@ -188,6 +195,24 @@ ul li {
 .greeting-container {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+
+    display: flex;
+    align-items: center;
+}
+
+.greeting-avatar img {
+    width: 80px;
+    margin: 10px;
+}
+
+.greeting p {
+    font-weight: 900;
+}
+
+.greeting h1 {
+    font-size: 30px;
+    font-weight: 900;
+
 }
 
 .button-container {
