@@ -129,7 +129,8 @@ ul li {
     padding: 4px;
 }
 
-.main-nav-container, .settings-container {
+.main-nav-container,
+.settings-container {
     font-size: var(--default-font-size);
     font-weight: bold;
 }
@@ -246,7 +247,7 @@ ul li {
 .projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr 3fr 3fr;
+    grid-template-rows: 1fr 3fr 3fr;
 }
 
 .projects-container h1 {
@@ -256,17 +257,30 @@ ul li {
 .card {
     align-self: center;
     justify-self: center;
-    width: 380px;
-    height: 180px;
+    width: 420px;
+    height: 220px;
     margin: 8px;
+    padding: 20px;
+    border-left: 10px solid #ffd035;
+    box-shadow: 3px 5px 5px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.card h2 {
+    font-size: 20px;
+    font-weight: 900;
 }
 
 .card-icons {
     display: flex;
     justify-content: flex-end;
+    gap: 12px;
+}
 
-    border: 1px solid red;
+.card-icons img {
+    width: 24px;
 }
