@@ -72,9 +72,6 @@ img {
     width: 20px;
 }
 
-.header {
-    background-color: #ffffff;
-}
 
 nav {
     background-color: #1d93f8;
@@ -138,13 +135,14 @@ ul li {
 /* Header */
 .header {
     grid-column: 2 / 3;
-    grid-row: 1 / 2;
 
     display: grid;
     row-gap: 15px;
     grid-template-rows: repeat(2, 3fr);
     grid-template-columns: 6fr 1fr 1fr 1fr;
     padding-inline: 20px;
+    box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
 .search-container {
