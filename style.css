@@ -243,6 +243,13 @@ ul li {
 
 .projects-container h1 {
     grid-column: 1 / 3;
+    font-size: var(--default-font-size);
+    font-weight: 900;
+    margin-left: 8px;
+    padding-top: 20px;
+
+    
+    align-self: flex-end;
 }
 
 .card {
