@@ -83,6 +83,7 @@ body {
     font-family: mainFont;
 }
 
+/* Hover animations */
 .clickable:hover {
     cursor: pointer;
     -webkit-transform: scale(1.05);
@@ -100,6 +101,12 @@ ul>li:hover {
     -webkit-transform: scale(1.01);
     transform: scale(1.01);
     text-decoration: underline;
+}
+
+.card-icons>img:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 /* Sidebar container */
@@ -122,23 +129,25 @@ ul>li:hover {
 }
 
 #sidebar-header-img {
-    width: 40px;
+    width: 50px;
 }
 
 .sidebar-header h1 {
-    font-size: 26px;
+    font-size: 42px;
     font-family: secondaryFont;
     font-weight: 600;
+    text-align: center;
 }
 
 .sidebar-container img {
-    width: 24px;
+    width: 32px;
 }
 
 ul li {
     display: flex;
     gap: 10px;
     padding: 4px;
+    font-size: 26px;
 }
 
 .main-nav-container,
@@ -152,8 +161,6 @@ ul li {
     grid-column: 2 / 3;
 
     display: grid;
-    /* row-gap: 15px; */
-    grid-template-rows: repeat(2, 3fr);
     grid-template-columns: 5fr 1fr 1fr 1fr;
     padding-inline: 20px;
     box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.1);
@@ -168,19 +175,20 @@ ul li {
 }
 
 .search-button img {
-    width: 30px;
+    width: 33px;
     margin: 4px;
 }
 
 .search {
     background: #e2e7f1;
-    border-radius: 15px;
-    padding: 10px;
+    border-radius: 20px;
+    padding-inline: 14px;
+    padding-block: 20px;
     font-size: 20px;
     height: 30px;
     flex-grow: 1;
-    /* justify-self: start; */
     align-self: center;
+    margin-left: 8px;
 }
 
 .user-container {
@@ -252,11 +260,9 @@ ul li {
 
 /* Main Container */
 .main-container {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
     position: relative;
     background-color: var(--main-bg-color);
-    padding: 20px 20px 40px 20px;
+    padding: 0px 20px 10px 20px;
 
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -267,7 +273,8 @@ ul li {
     grid-template-columns: 1fr 1fr;
 }
 
-.projects-container h1, .aside h1 {
+.projects-container h1,
+.aside h1 {
     display: grid;
     grid-column: 1 / 3;
     font-size: var(--default-font-size);
@@ -312,7 +319,8 @@ ul li {
     justify-content: space-between;
 }
 
-.announcements-container, .trending-container {
+.announcements-container,
+.trending-container {
     background-color: white;
     box-shadow: 0px 2px 3px rgb(175, 175, 175);
     padding: 20px 20px 20px 25px;
@@ -329,7 +337,7 @@ ul li {
     padding: 6px;
 }
 
-.announcement + .announcement {
+.announcement+.announcement {
     border-top: 1px solid #e7e5e4;
 }
 
